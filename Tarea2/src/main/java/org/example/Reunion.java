@@ -1,7 +1,7 @@
 package org.example;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Date;
 
 public abstract class Reunion {
@@ -16,13 +16,13 @@ public abstract class Reunion {
         horaPrevista = t;
         duracionPrevista = e;
     }
-    public List obtenerAsistencias() {
+    public ArrayList obtenerAsistencias() {
         return null;
     }
-    public List obtenerAusencias() {
+    public ArrayList obtenerAusencias() {
         return null;
     }
-    public List obtenerRetrasos() {
+    public ArrayList obtenerRetrasos() {
         return null;
     }
     public int obtenerTotalAsistencia() {
