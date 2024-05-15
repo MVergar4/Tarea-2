@@ -5,8 +5,8 @@ import java.util.Date;
 
 public class ReunionPresencial extends Reunion {
     private String sala;
-    public ReunionPresencial(String room, Date d, Instant t, Duration e) {
-        super(d, t, e);
+    public ReunionPresencial(String room, Date d, Instant t, Duration e, tipoReunion y) {
+        super(d, t, e, y);
         sala = room;
     }
     public String getSala() {
