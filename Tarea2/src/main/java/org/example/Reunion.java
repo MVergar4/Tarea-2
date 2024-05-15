@@ -12,21 +12,25 @@ public abstract class Reunion {
     private Instant horaInicio;
     private Instant horaFin;
     private Nota notas = new Nota();
+    private ArrayList<Invitacion> listaInvitados;
+    private ArrayList<Asistencia> asistencia = new ArrayList<>();
+    private ArrayList<Retraso> atrasados = new ArrayList<>();
     private tipoReunion tipoReunion;
-    public Reunion(Date d, Instant t, Duration e, tipoReunion E) {
+    public Reunion(Date d, Instant t, Duration e, tipoReunion E, ArrayList<Invitacion> al) {
         this.fecha = d;
         this.horaPrevista = t;
         this.duracionPrevista = e;
         this.tipoReunion=E;
+        this.listaInvitados = al;
     }
-    public ArrayList obtenerAsistencias() {
-        return null;
+    public ArrayList<Asistencia> obtenerAsistencias() {
+        return asistencia;
     }
     public ArrayList obtenerAusencias() {
         return null;
     }
-    public ArrayList obtenerRetrasos() {
-        return null;
+    public ArrayList<Retraso> obtenerRetrasos() {
+        return atrasados;
     }
     public int obtenerTotalAsistencia() {
         return 0;
