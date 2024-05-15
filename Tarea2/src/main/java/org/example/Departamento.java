@@ -1,18 +1,25 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Departamento implements Invitable {
     private String nombre;
-    private int cantidadEmpleados;
-    public Departamento(String nombre,int cantidadEmpleados){
+    private ArrayList<Empleado> al;
+    public Departamento(String nombre){
         this.nombre=nombre;
-        this.cantidadEmpleados=cantidadEmpleados;
-    }
-    public int obtenerCantidadEmpleados(){
-        return cantidadEmpleados;
     }
 
+    public void setEmpleados(Empleado E) {
+        al.add(E);
+    }
+
+    public int obtenerCantidadEmpleados(){
+        return al.size();
+    }
     @Override
     public void invitar() {
-
+        for(int i=0; i< al.size();i++){
+            al.remove(0).invitar();
+        }
     }
 }
