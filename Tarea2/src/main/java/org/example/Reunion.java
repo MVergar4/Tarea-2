@@ -13,6 +13,7 @@ public abstract class Reunion {
     private Instant horaFin;
     private Nota notas = new Nota();
     private ArrayList<Invitacion> listaInvitados;
+    private ArrayList<Empleado> ausencia;
     private ArrayList<Asistencia> asistencia = new ArrayList<>();
     private ArrayList<Retraso> atrasados = new ArrayList<>();
     private tipoReunion tipoReunion;
@@ -22,21 +23,36 @@ public abstract class Reunion {
         this.duracionPrevista = e;
         this.tipoReunion=E;
         this.listaInvitados = al;
+        ArrayList<Invitacion> al2 = (ArrayList<Invitacion>) al.clone();
+        for (int i = 0; i < al2.size(); i++) {
+            ausencia.add(al2.get(i).getEmpleado());
+        }
     }
+    /**
+    public void addAsistente(Empleado e) {
+        ausencia.remove(e);
+        Asistencia a = new Asistencia(e);
+        asistencia.add(a);
+    }
+    public void addAtrasado(Empleado e, Instant hora) {
+        ausencia.remove(e);
+        Retraso r = new Retraso(e, hora);
+        atrasados.add(r);
+    }*/
     public ArrayList<Asistencia> obtenerAsistencias() {
         return asistencia;
     }
-    public ArrayList obtenerAusencias() {
-        return null;
+    public ArrayList<Empleado> obtenerAusencias() {
+        return ausencia;
     }
     public ArrayList<Retraso> obtenerRetrasos() {
         return atrasados;
     }
     public int obtenerTotalAsistencia() {
-        return 0;
+        return asistencia.size();
     }
     public float obtenerPorcentajeAsistencia() {
-        return 0;
+        return (float) asistencia.size() / listaInvitados.size();
     }
     public float calcularTiempoReal() {
         return Duration.between(horaInicio,horaFin).toMinutes();
