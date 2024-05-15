@@ -28,7 +28,6 @@ public abstract class Reunion {
             ausencia.add(al2.get(i).getEmpleado());
         }
     }
-    /**
     public void addAsistente(Empleado e) {
         ausencia.remove(e);
         Asistencia a = new Asistencia(e);
@@ -38,7 +37,7 @@ public abstract class Reunion {
         ausencia.remove(e);
         Retraso r = new Retraso(e, hora);
         atrasados.add(r);
-    }*/
+    }
     public ArrayList<Asistencia> obtenerAsistencias() {
         return asistencia;
     }
