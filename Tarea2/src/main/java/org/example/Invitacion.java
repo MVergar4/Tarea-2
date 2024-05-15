@@ -8,4 +8,10 @@ public class Invitacion {
         empleado = e;
         this.hora=hora;
     }
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+    public Instant getHora() {
+        return hora;
+    }
 }
