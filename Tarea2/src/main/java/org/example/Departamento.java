@@ -18,6 +18,7 @@ public class Departamento {
      */
     public Departamento(String nombre){
         this.nombre=nombre;
+        this.al= new ArrayList<>();
     }
 
     /**
