@@ -13,7 +13,7 @@ public abstract class Reunion {
     private Instant horaFin;
     private Nota notas = new Nota();
     private ArrayList<Invitacion> listaInvitados;
-    private ArrayList<Empleado> ausencia;
+    private ArrayList<Empleado> ausencia = new ArrayList<>();
     private ArrayList<Asistencia> asistencia = new ArrayList<>();
     private ArrayList<Retraso> atrasados = new ArrayList<>();
     private tipoReunion tipoReunion;
