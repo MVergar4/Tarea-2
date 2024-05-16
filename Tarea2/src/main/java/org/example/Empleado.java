@@ -11,7 +11,21 @@ public class Empleado implements Invitable{
         this.nombre=nombre;
         this.correo=correo;
     }
-
+    public String getId() {
+        return id;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public String getCorreo() {
+        return correo;
+    }
+    public String toString() {
+        return "Empleado: " + nombre + " " + apellido + ". Id: " + id + ". Correo: " + correo;
+    }
     @Override
     public void invitar() {
 
