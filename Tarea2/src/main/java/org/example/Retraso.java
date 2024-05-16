@@ -9,4 +9,7 @@ public class Retraso extends Asistencia {
     public Instant getHora() {
         return hora;
     }
+    public String toString() {
+        return "Empleado " + empleado.getId() + ": atrasado.";
+    }
 }

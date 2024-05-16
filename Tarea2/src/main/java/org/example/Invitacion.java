@@ -14,4 +14,7 @@ public class Invitacion {
     public Instant getHora() {
         return hora;
     }
+    public String toString() {
+        return "Empleado " + empleado.getId() + ": invitado.";
+    }
 }
