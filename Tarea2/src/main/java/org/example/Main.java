@@ -39,7 +39,10 @@ public class Main {
         R.iniciar(instante);
         R.finalizar(instante_2);
         R.setNota("Llego el jefe ");
-        //R.CrearInforme(R.getSala());
+        R.addAsistente(e);
+        R.addAsistente(e);
+        R.addAsistente(e);
+        R.CrearInforme(R.getSala());
 
     }
 }
