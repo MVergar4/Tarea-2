@@ -169,6 +169,9 @@ public abstract class Reunion {
             for(int i =0; i<asistencia.size();i++){
                 escritor.println(asistencia.get(i).getEmpleado());
             }
+            for(int i =0; i<atrasados.size();i++){
+                escritor.println(atrasados.get(i).getEmpleado());
+            }
 
         } catch (IOException e) {
             System.out.println("Error " + e.getMessage());
