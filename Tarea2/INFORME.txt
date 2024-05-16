@@ -1,0 +1,8 @@
+Tue May 14 12:00:00 CLT 2024
+Hora de inicio: 2024-05-13T12:00:00Z, Hora de termino: 2024-05-13T13:00:00Z, Duracion: 60.0 minutos
+Tipo de reunion: MARKETING
+Lugar: Sala 111
+Notas: Llego el jefe .
+Empleado: Marcelooo Vergaraaa. Id: 15. Correo: marcvergara2022@udec.cl
+Empleado: Marcelooo Vergaraaa. Id: 15. Correo: marcvergara2022@udec.cl
+Empleado: Marcelooo Vergaraaa. Id: 15. Correo: marcvergara2022@udec.cl

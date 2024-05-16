@@ -1,8 +1,9 @@
 package org.example;
 
+import java.time.Instant;
 import java.util.ArrayList;
 
-public class Departamento implements Invitable {
+public class Departamento {
     private String nombre;
     private ArrayList<Empleado> al;
     public Departamento(String nombre){
@@ -16,10 +17,11 @@ public class Departamento implements Invitable {
     public int obtenerCantidadEmpleados(){
         return al.size();
     }
-    @Override
-    public void invitar() {
+    public ArrayList<Invitacion> invitarDepartamentoEntero(Instant hora) {
+        ArrayList<Invitacion> alinv = new ArrayList<>();
         for(int i=0; i< al.size();i++){
-            al.get(i).invitar();
+            alinv.add(al.get(i).invitar(hora));
         }
+        return alinv;
     }
 }

@@ -1,5 +1,7 @@
 package org.example;
 
+import java.time.Instant;
+
 public class Empleado implements Invitable{
     private String id;
     private String apellido;
@@ -27,7 +29,7 @@ public class Empleado implements Invitable{
         return "Empleado: " + nombre + " " + apellido + ". Id: " + id + ". Correo: " + correo;
     }
     @Override
-    public void invitar() {
-
+    public Invitacion invitar(Instant hora) {
+        return new Invitacion(this, hora);
     }
 }

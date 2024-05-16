@@ -25,15 +25,15 @@ public class Main {
         Invitacion i = null;
         e = new Empleado("12", "Vergara", "Marcelo", "marcvergara2023@udec.cl");
         System.out.println(e.toString());
-        i = new Invitacion(e, instante);
+        i = e.invitar(instante);
         lista.add(i);
         e = new Empleado("14", "Vergaraa", "Marceloo", "marcvergara2024@udec.cl");
         System.out.println(e.toString());
-        i = new Invitacion(e, instante);
+        i = e.invitar(instante);
         lista.add(i);
         e = new Empleado("15", "Vergaraaa", "Marcelooo", "marcvergara2022@udec.cl");
         System.out.println(e.toString());
-        i = new Invitacion(e, instante);
+        i = e.invitar(instante);
         lista.add(i);
         ReunionPresencial R = new ReunionPresencial("Sala 111",fecha,instante,duracion,T, lista);
         R.iniciar(instante);
