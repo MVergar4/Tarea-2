@@ -13,4 +13,7 @@ public class ReunionVirtual extends Reunion {
     public String getEnlace() {
         return enlace;
     }
+    public String toString() {
+        return "Reunion virtual con enlace " + enlace;
+    }
 }

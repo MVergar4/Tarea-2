@@ -13,4 +13,7 @@ public class ReunionPresencial extends Reunion {
     public String getSala() {
         return sala;
     }
+    public String toString() {
+        return "Reunion presencial en sala " + sala;
+    }
 }
