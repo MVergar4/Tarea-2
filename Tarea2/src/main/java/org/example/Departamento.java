@@ -19,7 +19,7 @@ public class Departamento implements Invitable {
     @Override
     public void invitar() {
         for(int i=0; i< al.size();i++){
-            al.remove(0).invitar();
+            al.get(i).invitar();
         }
     }
 }
