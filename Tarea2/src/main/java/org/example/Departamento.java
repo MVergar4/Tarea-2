@@ -24,4 +24,7 @@ public class Departamento {
         }
         return alinv;
     }
+    public String toString() {
+        return "Departamento " + nombre + " de empleados";
+    }
 }
