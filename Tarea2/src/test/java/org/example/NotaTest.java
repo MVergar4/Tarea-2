@@ -8,15 +8,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NotaTest {
 
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
-
     @Test
     void añadirNota() {
+        Nota n = new Nota();
+        n.añadirNota("Hola ");
+        n.añadirNota("Buenos ");
+        n.añadirNota("Dias ");
+        assertEquals("Hola . Buenos . Dias .",n.leerNota());
     }
 }
