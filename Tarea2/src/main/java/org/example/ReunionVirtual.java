@@ -34,7 +34,7 @@ public class ReunionVirtual extends Reunion {
     }
 
     /**
-     * Metodo que al ser llamado devuelve el enlace de la reunion en cuestion
+     * Metodo que al ser llamado devuelve el enlace de la reunion en cuestion e indica que es virtual
      * @return url de la reunion
      */
     @Override
