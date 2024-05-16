@@ -82,7 +82,9 @@ public abstract class Reunion {
             escritor.println("Tipo de reunion: " + tipoReunion);
             escritor.println("Lugar: " + lugar);
             escritor.println("Notas: " + notas.leerNota());
-            escritor.println(obtenerAsistencias());
+            for(int i=0;i<asistencia.size();i++){
+                escritor.println(asistencia.get(i).getEmpleado());
+            }
 
         } catch (IOException e) {
             System.out.println("Error " + e.getMessage());
